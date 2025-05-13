@@ -1,0 +1,57 @@
+/* ===========================
+   Кнопки покупки (stat-card-link / buyBtn)
+   =========================== */
+button.buyBtn {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(135deg, #00ffff, #ff00ff);
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button.buyBtn .stat-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+button.buyBtn .stat-number {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+button.buyBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ===========================
+   Блок сообщений для buy.js
+   =========================== */
+#message {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #00ff99;
+}
+
+#message a {
+  color: #ffff00;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.2);
+  transition: background 0.2s ease;
+}
+
+#message a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
