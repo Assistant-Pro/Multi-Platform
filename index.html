@@ -8,6 +8,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Exo+2:wght@300;400;500;600;700&family=Audiowide&display=swap" rel="stylesheet">
     <link href="tooplate-neural-style.css" rel="stylesheet">
+	<style>
+.hero {
+  position: relative;
+  padding: 80px 0 100px 0;
+  text-align: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Видео почти вплотную */
+.hero-video-wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 8px auto;
+  z-index: 2;
+}
+
+/* Видео фиксированного размера */
+.hero-video {
+  width: 720px;
+  height: 405px;
+  border-radius: 10px;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+/* Canvas по размеру видео */
+#neural-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 720px;
+  height: 405px;
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 10px;
+}
+
+/* Стрелка немного ниже нижнего края последнего видео */
+.scroll-btn {
+  position: absolute;
+  top: calc(100% + 30px); /* 30px ниже края видео */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+/* ABOUT THE PRODUCT — чуть ниже стрелки */
+#about {
+  margin-top: 140px;
+}
+</style>
+
 </head>
 <body>
     <canvas id="neural-bg"></canvas>
@@ -66,6 +124,17 @@
                     allowfullscreen>
                 </iframe>
             </div>
+            <div class="hero-video-wrapper" style="text-align:center; margin-top:50px;">
+                <iframe 
+                    width="720" 
+                    height="405"
+                    class="hero-video"
+                    src="https://www.youtube.com/embed/OgyysMsdxJs?autoplay=0&controls=0&modestbranding=1&rel=0&showinfo=0&loop=1&mute=0"
+                    frameborder="0" 
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen>
+                </iframe>
+            </div>			
         </div>
         <a href="#about" class="scroll-btn">
             <div class="scroll-btn-inner">
