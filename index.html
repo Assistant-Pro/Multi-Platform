@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Multi-Platform Assistant Pro</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+
+
+<link href="tooplate-neural-style.css" rel="stylesheet">
+
+
+
+<style>
+
+
+body{
+
+background:#050505;
+color:white;
+
+font-family:'Nunito',sans-serif;
+
+}
+
+
+
+
+
+/* ================= NAVBAR ================= */
+
+
+#navbar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+z-index:999;
+
+background:rgba(5,5,5,.82);
+
+backdrop-filter:blur(15px);
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+
+
+.nav-container{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:14px 25px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+}
+
+
+
+.logo-container{
+
+display:flex;
+
+align-items:center;
+
+gap:14px;
+
+text-decoration:none;
+
+}
+
+
+
+.logo-container img{
+
+width:58px;
+
+height:58px;
+
+object-fit:contain;
+
+}
+
+
+
+.logo-title{
+
+
+font-size:30px;
+
+font-weight:900;
+
+letter-spacing:-1px;
+
+white-space:nowrap;
+
+
+}
+
+
+
+.nav-menu ul{
+
+
+display:flex;
+
+gap:35px;
+
+list-style:none;
+
+margin:0;
+
+padding:0;
+
+
+}
+
+
+
+.nav-menu a{
+
+
+color:white;
+
+text-decoration:none;
+
+font-weight:700;
+
+font-size:14px;
+
+letter-spacing:.5px;
+
+transition:.25s;
+
+
+}
+
+
+
+.nav-menu a:hover{
+
+color:#7CFF4F;
+
+}
+
+
+
+
+
+/* ================= HERO ================= */
+
+
+.hero{
+
+padding-top:130px;
+
+padding-bottom:100px;
+
+text-align:center;
+
+}
+
+
+
+.hero-content{
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+
+
+.glitch{
+
+
+font-family:'Orbitron',sans-serif;
+
+font-size:58px;
+
+font-weight:900;
+
+letter-spacing:-2px;
+
+margin-bottom:20px;
+
+
+}
+
+
+
+.subtitle{
+
+
+max-width:750px;
+
+margin:auto;
+
+font-size:18px;
+
+line-height:1.7;
+
+color:rgba(255,255,255,.65);
+
+
+}
+
+
+
+
+
+.hero-video-wrapper{
+
+
+width:720px;
+
+max-width:95%;
+
+margin:45px auto;
+
+padding:8px;
+
+background:#111;
+
+border-radius:18px;
+
+box-shadow:
+
+0 0 40px rgba(31,183,255,.15),
+
+0 20px 60px rgba(0,0,0,.8);
+
+
+}
+
+
+
+.hero-video{
+
+
+width:100%;
+
+aspect-ratio:16/9;
+
+border-radius:12px;
+
+display:block;
+
+
+}
+
+
+
+
+
+/* ================= PRODUCTS ================= */
+
+
+
+.products-grid{
+
+
+max-width:1200px;
+
+margin:50px auto;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+padding:0 20px;
+
+
+}
+
+
+
+.product-card{
+
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(255,255,255,.06),
+
+rgba(255,255,255,.02)
+
+);
+
+
+border:1px solid rgba(255,255,255,.1);
+
+border-radius:24px;
+
+padding:25px;
+
+text-align:center;
+
+
+box-shadow:
+
+0 20px 60px rgba(0,0,0,.6);
+
+
+transition:.3s;
+
+
+}
+
+
+
+.product-card:hover{
+
+
+transform:translateY(-8px);
+
+
+border-color:#1FB7FF;
+
+
+}
+
+
+
+
+.product-card h3{
+
+
+font-size:22px;
+
+margin-bottom:20px;
+
+
+}
+
+
+
+
+.product-image{
+
+
+width:100%;
+
+max-width:300px;
+
+height:280px;
+
+object-fit:contain;
+
+border-radius:16px;
+
+border:1px solid #5AC8FA;
+
+box-shadow:
+
+0 0 25px rgba(90,200,250,.35);
+
+
+}
+
+
+
+
+.product-description{
+
+
+color:#5AC8FA;
+
+line-height:1.7;
+
+margin:20px 0;
+
+
+}
+
+
+
+
+
+/* PREMIUM BOX */
+
+
+.premium-box{
+
+
+margin-top:25px;
+
+padding:22px;
+
+background:#0d0d0d;
+
+border-radius:20px;
+
+border:1px solid #222;
+
+
+}
+
+
+
+
+.badge{
+
+
+display:inline-block;
+
+padding:6px 14px;
+
+border-radius:20px;
+
+font-size:12px;
+
+font-weight:800;
+
+margin-bottom:15px;
+
+
+}
+
+
+
+.free-badge{
+
+
+background:linear-gradient(135deg,#37e98c,#00b86b);
+
+}
+
+
+
+.pro-badge{
+
+
+background:linear-gradient(135deg,#4fd0ff,#1498ff);
+
+}
+
+
+
+
+
+.price{
+
+
+font-size:42px;
+
+font-weight:900;
+
+color:#00ff88;
+
+margin:18px 0;
+
+
+}
+
+
+
+
+
+.crypto-btn{
+
+
+display:block;
+
+padding:15px;
+
+border-radius:14px;
+
+background:linear-gradient(135deg,#38c9ff,#0d95ff);
+
+color:white;
+
+font-weight:900;
+
+text-decoration:none;
+
+transition:.25s;
+
+box-shadow:
+
+0 10px 30px rgba(0,150,255,.35);
+
+
+}
+
+
+
+.crypto-btn:hover{
+
+
+transform:translateY(-3px);
+
+box-shadow:
+
+0 15px 40px rgba(0,150,255,.6);
+
+
+}
+
+
+
+.trial-btn{
+
+
+width:100%;
+
+padding:13px;
+
+border-radius:12px;
+
+border:1px solid #333;
+
+background:#151515;
+
+color:white;
+
+font-weight:700;
+
+cursor:pointer;
+
+
+}
+
+
+
+.trial-btn:hover{
+
+border-color:#7CFF4F;
+
+}
+
+
+
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+<canvas id="neural-bg"></canvas>
+
+
+
+<nav id="navbar">
+
+
+<div class="nav-container">
+
+
+
+<a href="#home" class="logo-container">
+
+
+<img src="https://assistant-pro.github.io/Multi-Platform/logo.png">
+
+
+
+<span class="logo-title">
+
+<span style="color:#7CFF4F">
+Multi
+</span>
+
+<span style="color:#1FB7FF">
+Platform
+</span>
+
+<span style="color:white">
+ Assistant Pro
+</span>
+
+
+</span>
+
+
+</a>
+
+
+
+<div class="nav-menu">
+
+
+<ul>
+
+<li><a href="#home">HOME</a></li>
+
+<li><a href="#about">PRODUCTS</a></li>
+
+<li><a href="#projects">ADVANTAGES</a></li>
+
+
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+<div class="hero-content">
+
+
+<h1 class="glitch"
+data-text="Multi-Platform Assistant Pro">
+
+Multi-Platform Assistant Pro
+
+</h1>
+
+
+<p class="subtitle">
+
+Advanced AI gaming assistant with adaptive analytics,
+smart strategy control and real-time insights.
+
+</p>
+
+
+
+<div class="hero-video-wrapper">
+
+
+<iframe
+class="hero-video"
+src="https://www.youtube.com/embed/4KxNJPJGjjM?controls=0&rel=0&modestbranding=1"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+
+</div>
+
+
+
+<div class="hero-video-wrapper">
+
+
+<iframe
+class="hero-video"
+src="https://www.youtube.com/embed/OgyysMsdxJs?controls=0&rel=0&modestbranding=1"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= PRODUCTS ================= -->
+
+
+<section id="about">
+
+
+<h2 class="section-title">
+
+PREMIUM PRODUCTS
+
+</h2>
+
+
+
+<div class="products-grid">
+
+
+
+
+
+<!-- PRODUCT 1 -->
+
+
+<div class="product-card">
+
+
+<h3 style="color:#00ffff;">
+Stake Blackjack V1
+</h3>
+
+
+
+<img
+
+src="https://assistant-pro.github.io/Multi-Platform/stake_blackjack.png"
+
+class="product-image">
+
+
+<p class="product-description">
+
+Real-time blackjack assistant.
+Analyze every hand and improve your session strategy.
+
+</p>
+
+
+
+<div class="premium-box">
+
+
+<span class="badge free-badge">
+FREE TRIAL
+</span>
+
+
+<p>
+7-Day Trial • No Credit Card
+</p>
+
+
+<button class="trial-btn"
+id="dlBtn1">
+
+⬇ Download Trial
+
+</button>
+
+
+
+<hr style="border-color:#333;margin:25px 0;">
+
+
+
+<span class="badge pro-badge">
+LIFETIME
+</span>
+
+
+<h3>
+Premium Access
+</h3>
+
+
+<div class="price">
+$65
+</div>
+
+
+
+<a href="#"
+
+class="crypto-btn"
+
+onclick="openCrypto('product1');return false;">
+
+BUY WITH CRYPTO
+
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- PRODUCT 2 -->
+
+
+<div class="product-card">
+
+
+<h3 style="color:#00ffff;">
+Stake Radar V1
+</h3>
+
+
+
+<img
+
+src="https://assistant-pro.github.io/Multi-Platform/stake_radar.png"
+
+class="product-image">
+
+
+
+<p class="product-description">
+
+Advanced radar analytics system.
+Track statistics and visualize trends.
+
+</p>
+
+
+
+<div class="premium-box">
+
+
+<span class="badge free-badge">
+FREE TRIAL
+</span>
+
+
+<p>
+7-Day Trial • Full Features
+</p>
+
+
+
+<button class="trial-btn"
+id="dlBtn2">
+
+⬇ Download Trial
+
+</button>
+
+
+
+<hr style="border-color:#333;margin:25px 0;">
+
+
+
+<span class="badge pro-badge">
+PREMIUM
+</span>
+
+
+<h3>
+Lifetime License
+</h3>
+
+
+
+<div class="price">
+$65
+</div>
+
+
+
+<a href="#"
+
+class="crypto-btn"
+
+onclick="openCrypto('product2');return false;">
+
+BUY WITH CRYPTO
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- PRODUCT 3 -->
+
+
+<div class="product-card">
+
+
+<h3 style="color:#00ffff;">
+Multi-Platform Assistant Pro
+</h3>
+
+
+
+
+<img
+
+src="https://assistant-pro.github.io/Multi-Platform/Aviator_stake.png"
+
+class="product-image">
+
+
+
+<p class="product-description">
+
+Universal assistant for multiple platforms
+with adaptive analytics and strategy control.
+
+</p>
+
+
+
+<div class="premium-box">
+
+
+<span class="badge free-badge">
+FREE TRIAL
+</span>
+
+
+<p>
+7-Day Premium Preview
+</p>
+
+
+
+<button class="trial-btn"
+id="dlBtn3">
+
+⬇ Download Trial
+
+</button>
+
+
+
+
+<hr style="border-color:#333;margin:25px 0;">
+
+
+
+<span class="badge pro-badge">
+PRO VERSION
+</span>
+
+
+
+<h3>
+Lifetime Access
+</h3>
+
+
+
+<div class="price">
+$265
+</div>
+
+
+
+<a href="#"
+
+class="crypto-btn"
+
+onclick="openCrypto('product3');return false;">
+
+BUY WITH CRYPTO
+
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- PRODUCT 4 -->
+
+
+<div class="product-card">
+
+
+<h3 style="color:#00ffff;">
+Stake Mines Hack V1
+</h3>
+
+
+
+<img
+
+src="https://assistant-pro.github.io/Multi-Platform/stake_mines.png"
+
+class="product-image">
+
+
+
+<p class="product-description">
+
+Advanced mines analytics tool.
+Smart interface and strategy control.
+
+</p>
+
+
+
+
+<div class="premium-box">
+
+
+<span class="badge free-badge">
+FREE TRIAL
+</span>
+
+
+<p>
+7-Day Trial • Full Preview
+</p>
+
+
+
+<button class="trial-btn"
+id="dlBtn4">
+
+⬇ Download Trial
+
+</button>
+
+
+
+
+<hr style="border-color:#333;margin:25px 0;">
+
+
+
+<span class="badge pro-badge">
+LIFETIME
+</span>
+
+
+
+<h3>
+Premium Access
+</h3>
+
+
+
+<div class="price">
+$65
+</div>
+
+
+
+
+<a href="#"
+
+class="crypto-btn"
+
+onclick="openCrypto('product4');return false;">
+
+BUY WITH CRYPTO
+
+</a>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</section>
+
+<!-- ================= CRYPTO PAYMENT MODAL ================= -->
+
+
+<div id="cryptoModal" style="
+
+display:none;
+
+position:fixed;
+
+inset:0;
+
+background:rgba(0,0,0,.8);
+
+align-items:center;
+
+justify-content:center;
+
+z-index:9999;
+
+">
+
+
+
+<div style="
+
+width:380px;
+
+max-width:90%;
+
+background:#111;
+
+padding:30px;
+
+border-radius:24px;
+
+border:1px solid #333;
+
+box-shadow:0 30px 80px rgba(0,0,0,.8);
+
+color:white;
+
+">
+
+
+
+<button onclick="closeCrypto()"
+
+style="
+
+float:right;
+
+background:#222;
+
+border:none;
+
+color:white;
+
+width:35px;
+
+height:35px;
+
+border-radius:50%;
+
+font-size:22px;
+
+cursor:pointer;
+
+">
+
+×
+
+</button>
+
+
+
+<h2 style="text-align:center;">
+
+Choose Crypto Payment
+
+</h2>
+
+
+
+
+<button onclick="selectCrypto('USDT_TRC20')"
+
+style="width:100%;padding:15px;margin-top:15px;border-radius:12px;background:#222;color:white;border:none;font-weight:700;">
+
+🟢 USDT TRC20
+
+</button>
+
+
+
+<button onclick="selectCrypto('BTC')"
+
+style="width:100%;padding:15px;margin-top:10px;border-radius:12px;background:#222;color:white;border:none;font-weight:700;">
+
+₿ Bitcoin
+
+</button>
+
+
+
+<button onclick="selectCrypto('LTC')"
+
+style="width:100%;padding:15px;margin-top:10px;border-radius:12px;background:#222;color:white;border:none;font-weight:700;">
+
+🔵 Litecoin
+
+</button>
+
+
+
+<button onclick="selectCrypto('ETH')"
+
+style="width:100%;padding:15px;margin-top:10px;border-radius:12px;background:#222;color:white;border:none;font-weight:700;">
+
+◆ Ethereum
+
+</button>
+
+
+
+<button onclick="selectCrypto('SOL')"
+
+style="width:100%;padding:15px;margin-top:10px;border-radius:12px;background:#222;color:white;border:none;font-weight:700;">
+
+🟣 Solana
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+
+<footer style="
+
+text-align:center;
+
+padding:50px 20px;
+
+border-top:1px solid #222;
+
+margin-top:80px;
+
+color:#888;
+
+">
+
+
+<p>
+
+© 2026 Multi-Platform Assistant Pro
+
+</p>
+
+
+</footer>
+
+
+
+
+
+
+
+<script src="tooplate-neural-scripts.js"></script>
+
+<script src="buy.js"></script>
+
+
+
+
+
+<script>
+
+
+/* ================= SERVER WAKE ================= */
+
+
+
+const SERVER_URL =
+
+"https://crypto-shop-r6d2.onrender.com/";
+
+
+
+const KEEP_ALIVE_INTERVAL =
+
+10 * 60 * 1000;
+
+
+
+const RETRY_INTERVAL =
+
+15000;
+
+
+
+const TIMEOUT =
+
+10000;
+
+
+
+
+
+
+const statusBox=document.createElement("div");
+
+
+
+Object.assign(statusBox.style,{
+
+position:"fixed",
+
+bottom:"20px",
+
+right:"20px",
+
+background:"#111",
+
+color:"#fff",
+
+padding:"12px 18px",
+
+borderRadius:"15px",
+
+fontFamily:"Segoe UI",
+
+fontSize:"13px",
+
+zIndex:"9999",
+
+border:"1px solid #333",
+
+boxShadow:"0 10px 40px rgba(0,0,0,.5)"
+
+});
+
+
+
+statusBox.innerHTML="🔄 Checking Payment Gateway...";
+
+
+document.body.appendChild(statusBox);
+
+
+
+
+
+
+function updateStatus(text,color){
+
+
+statusBox.innerHTML=text;
+
+statusBox.style.background=color;
+
+
+}
+
+
+
+
+
+
+
+async function pingServer(){
+
+
+try{
+
+
+await fetch(
+
+SERVER_URL,
+
+{
+
+mode:"no-cors",
+
+cache:"no-store"
+
+}
+
+);
+
+
+return true;
+
+
+}
+
+catch(e){
+
+return false;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+async function wakeRenderServer(){
+
+
+
+updateStatus(
+
+"⚡ Connecting Payment Server...",
+
+"#8a6d00"
+
+);
+
+
+
+let alive=await pingServer();
+
+
+
+let tries=0;
+
+
+
+while(!alive && tries<20){
+
+
+tries++;
+
+
+updateStatus(
+
+"⏳ Waking Server "+tries,
+
+"#8a0000"
+
+);
+
+
+await new Promise(r=>
+
+setTimeout(r,RETRY_INTERVAL)
+
+);
+
+
+
+alive=await pingServer();
+
+
+
+}
+
+
+
+
+if(alive){
+
+
+updateStatus(
+
+"🟢 Payment Gateway Online",
+
+"#087f23"
+
+);
+
+
+
+setTimeout(
+
+wakeRenderServer,
+
+KEEP_ALIVE_INTERVAL
+
+);
+
+
+}
+
+else{
+
+
+updateStatus(
+
+"🔴 Server Offline",
+
+"#8b0000"
+
+);
+
+
+}
+
+
+}
+
+
+
+document.addEventListener(
+
+"DOMContentLoaded",
+
+wakeRenderServer
+
+);
+
+
+
+</script>
+
+
+
+
+
+
+
+<script>
+
+
+
+let currentProduct=null;
+
+let currentOrder=null;
+
+
+
+function openCrypto(product){
+
+
+currentProduct=product;
+
+
+document.getElementById("cryptoModal").style.display="flex";
+
+
+}
+
+
+
+
+function closeCrypto(){
+
+
+document.getElementById("cryptoModal").style.display="none";
+
+
+}
+
+
+
+
+
+
+
+async function selectCrypto(coin){
+
+
+
+try{
+
+
+
+const response=await fetch(
+
+SERVER_URL+"create-order",
+
+{
+
+
+method:"POST",
+
+
+headers:{
+
+
+"Content-Type":"application/json"
+
+
+},
+
+
+
+body:JSON.stringify({
+
+
+product:currentProduct,
+
+
+coin:coin
+
+
+})
+
+
+}
+
+);
+
+
+
+const data=await response.json();
+
+
+
+if(data.error){
+
+
+alert(data.error);
+
+return;
+
+
+}
+
+
+
+currentOrder=data.orderId;
+
+
+
+document.querySelector("#cryptoModal div").innerHTML=`
+
+<h2 style="text-align:center">
+
+Payment Details
+
+</h2>
+
+
+
+<p>
+Currency:
+<b>${data.coin}</b>
+</p>
+
+
+<p>
+Amount:
+<b style="color:#00ff88">
+
+${data.amount} ${data.coin}
+
+</b>
+
+</p>
+
+
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(data.wallet)}"
+
+style="display:block;margin:20px auto;background:white;padding:10px;border-radius:12px;">
+
+
+
+<textarea readonly
+
+style="width:100%;height:70px;background:#222;color:white;border-radius:10px;">
+
+${data.wallet}
+
+</textarea>
+
+
+
+<button onclick="checkPayment()"
+
+style="width:100%;margin-top:20px;padding:15px;background:#00c853;border:none;border-radius:12px;font-weight:bold;">
+
+Check Payment
+
+</button>
+
+
+
+<div id="payStatus"
+
+style="margin-top:20px;text-align:center;">
+
+Waiting Payment...
+
+</div>
+
+
+`;
+
+
+
+}
+
+
+catch(e){
+
+
+alert("Payment server error");
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+async function checkPayment(){
+
+
+
+if(!currentOrder)return;
+
+
+
+
+let timer=setInterval(async()=>{
+
+
+
+try{
+
+
+
+let r=await fetch(
+
+SERVER_URL+
+
+"check-order/"
+
++
+
+currentOrder
+
+);
+
+
+
+let data=await r.json();
+
+
+
+console.log(data);
+
+
+
+
+if(data.status==="paid"){
+
+
+
+clearInterval(timer);
+
+
+
+document.getElementById("payStatus").innerHTML=
+
+"✅ Payment Confirmed";
+
+
+
+}
+
+
+
+}
+
+
+
+catch(e){
+
+
+
+console.log(e);
+
+
+}
+
+
+
+},5000);
+
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
