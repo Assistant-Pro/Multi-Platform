@@ -4,15 +4,20 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Multi-Platform Assistant Pro</title>
+
+<title>
+Multi-Platform Assistant Pro
+</title>
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Nunito:wght@700;800&display=swap" rel="stylesheet">
 
 
 <link href="tooplate-neural-style.css" rel="stylesheet">
@@ -22,304 +27,122 @@
 <style>
 
 
-body{
+.hero {
 
-background:#050505;
-color:white;
-
-font-family:'Nunito',sans-serif;
-
-}
-
-
-
-
-
-/* ================= NAVBAR ================= */
-
-
-#navbar{
-
-position:fixed;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-z-index:999;
-
-background:rgba(5,5,5,.82);
-
-backdrop-filter:blur(15px);
-
-border-bottom:1px solid rgba(255,255,255,.08);
-
-}
-
-
-
-.nav-container{
-
-max-width:1200px;
-
-margin:auto;
-
-padding:14px 25px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:space-between;
-
-}
-
-
-
-.logo-container{
-
-display:flex;
-
-align-items:center;
-
-gap:14px;
-
-text-decoration:none;
-
-}
-
-
-
-.logo-container img{
-
-width:58px;
-
-height:58px;
-
-object-fit:contain;
-
-}
-
-
-
-.logo-title{
-
-
-font-size:30px;
-
-font-weight:900;
-
-letter-spacing:-1px;
-
-white-space:nowrap;
-
-
-}
-
-
-
-.nav-menu ul{
-
-
-display:flex;
-
-gap:35px;
-
-list-style:none;
-
-margin:0;
-
-padding:0;
-
-
-}
-
-
-
-.nav-menu a{
-
-
-color:white;
-
-text-decoration:none;
-
-font-weight:700;
-
-font-size:14px;
-
-letter-spacing:.5px;
-
-transition:.25s;
-
-
-}
-
-
-
-.nav-menu a:hover{
-
-color:#7CFF4F;
-
-}
-
-
-
-
-
-/* ================= HERO ================= */
-
-
-.hero{
-
-padding-top:130px;
-
-padding-bottom:100px;
-
+position:relative;
+padding:90px 0 120px;
 text-align:center;
 
 }
 
 
 
-.hero-content{
+.hero-content {
 
-max-width:1200px;
-
-margin:auto;
-
-}
-
-
-
-.glitch{
-
-
-font-family:'Orbitron',sans-serif;
-
-font-size:58px;
-
-font-weight:900;
-
-letter-spacing:-2px;
-
-margin-bottom:20px;
-
+position:relative;
+z-index:2;
 
 }
 
 
 
-.subtitle{
-
-
-max-width:750px;
-
-margin:auto;
-
-font-size:18px;
-
-line-height:1.7;
-
-color:rgba(255,255,255,.65);
-
-
-}
-
-
-
-
-
-.hero-video-wrapper{
-
+.hero-video-wrapper {
 
 width:720px;
+max-width:90%;
+margin:45px auto 0;
 
-max-width:95%;
+position:relative;
 
-margin:45px auto;
+}
 
-padding:8px;
 
-background:#111;
+
+.hero-video {
+
+width:100%;
+height:405px;
 
 border-radius:18px;
 
+border:1px solid rgba(90,200,250,.5);
+
 box-shadow:
 
-0 0 40px rgba(31,183,255,.15),
-
-0 20px 60px rgba(0,0,0,.8);
-
+0 0 40px rgba(90,200,250,.25),
+0 20px 60px rgba(0,0,0,.6);
 
 }
 
 
 
-.hero-video{
+.logo-title {
+
+font-family:'Nunito',sans-serif;
+
+font-size:28px;
+
+font-weight:800;
+
+letter-spacing:-1px;
+
+white-space:nowrap;
+
+}
 
 
-width:100%;
 
-aspect-ratio:16/9;
+#about {
 
-border-radius:12px;
-
-display:block;
-
+margin-top:80px;
 
 }
 
 
 
 
+.products-grid {
 
-/* ================= PRODUCTS ================= */
-
-
-
-.products-grid{
-
-
-max-width:1200px;
-
-margin:50px auto;
 
 display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:
 
-gap:30px;
+repeat(auto-fit,minmax(300px,335px));
 
-padding:0 20px;
+
+justify-content:center;
+
+gap:35px;
 
 
 }
 
 
 
-.product-card{
+
+.product-card {
 
 
 background:
 
 linear-gradient(
-
-180deg,
-
-rgba(255,255,255,.06),
-
-rgba(255,255,255,.02)
-
+145deg,
+rgba(20,20,20,.95),
+rgba(10,10,10,.95)
 );
 
 
-border:1px solid rgba(255,255,255,.1);
+border:
+
+1px solid rgba(255,255,255,.12);
+
 
 border-radius:24px;
 
+
 padding:25px;
+
 
 text-align:center;
 
@@ -329,20 +152,26 @@ box-shadow:
 0 20px 60px rgba(0,0,0,.6);
 
 
-transition:.3s;
+
+transition:.35s;
 
 
 }
 
 
 
-.product-card:hover{
+.product-card:hover {
 
 
 transform:translateY(-8px);
 
 
-border-color:#1FB7FF;
+border-color:#5AC8FA;
+
+
+box-shadow:
+
+0 25px 80px rgba(90,200,250,.18);
 
 
 }
@@ -350,141 +179,78 @@ border-color:#1FB7FF;
 
 
 
-.product-card h3{
-
-
-font-size:22px;
-
-margin-bottom:20px;
-
-
-}
-
-
-
-
-.product-image{
+.product-image {
 
 
 width:100%;
 
-max-width:300px;
+max-width:285px;
 
-height:280px;
+border-radius:12px;
 
-object-fit:contain;
 
-border-radius:16px;
+border:
 
-border:1px solid #5AC8FA;
+1px solid #5AC8FA;
+
 
 box-shadow:
 
-0 0 25px rgba(90,200,250,.35);
+0 0 30px rgba(90,200,250,.4);
 
 
 }
 
 
 
-
-.product-description{
-
-
-color:#5AC8FA;
-
-line-height:1.7;
-
-margin:20px 0;
-
-
-}
-
-
-
-
-
-/* PREMIUM BOX */
-
-
-.premium-box{
+.premium-box {
 
 
 margin-top:25px;
 
 padding:22px;
 
-background:#0d0d0d;
 
-border-radius:20px;
-
-border:1px solid #222;
+background:#111;
 
 
-}
+border-radius:18px;
 
 
+border:
 
-
-.badge{
-
-
-display:inline-block;
-
-padding:6px 14px;
-
-border-radius:20px;
-
-font-size:12px;
-
-font-weight:800;
-
-margin-bottom:15px;
+1px solid #333;
 
 
 }
 
 
 
-.free-badge{
+.price {
 
 
-background:linear-gradient(135deg,#37e98c,#00b86b);
-
-}
-
-
-
-.pro-badge{
-
-
-background:linear-gradient(135deg,#4fd0ff,#1498ff);
-
-}
-
-
-
-
-
-.price{
+margin:20px auto;
 
 
 font-size:42px;
 
 font-weight:900;
 
+
 color:#00ff88;
 
-margin:18px 0;
+
+text-shadow:
+
+0 0 20px rgba(0,255,136,.5);
+
 
 
 }
 
 
 
-
-
-.crypto-btn{
+.crypto-btn {
 
 
 display:block;
@@ -493,55 +259,71 @@ padding:15px;
 
 border-radius:14px;
 
-background:linear-gradient(135deg,#38c9ff,#0d95ff);
 
-color:white;
+background:
 
-font-weight:900;
+linear-gradient(
+135deg,
+#00ff88,
+#00b86b
+);
+
+
+color:#000;
+
+
+font-weight:800;
 
 text-decoration:none;
 
-transition:.25s;
 
-box-shadow:
-
-0 10px 30px rgba(0,150,255,.35);
+transition:.3s;
 
 
 }
 
 
 
-.crypto-btn:hover{
+.crypto-btn:hover {
 
 
-transform:translateY(-3px);
+transform:scale(1.04);
+
 
 box-shadow:
 
-0 15px 40px rgba(0,150,255,.6);
+0 0 35px rgba(0,255,136,.5);
+
 
 
 }
 
 
 
-.trial-btn{
+
+.trial-btn {
 
 
 width:100%;
 
-padding:13px;
+
+padding:14px;
+
 
 border-radius:12px;
 
-border:1px solid #333;
 
-background:#151515;
+background:#222;
+
+
+border:1px solid #444;
+
 
 color:white;
 
+
 font-weight:700;
+
 
 cursor:pointer;
 
@@ -550,12 +332,16 @@ cursor:pointer;
 
 
 
-.trial-btn:hover{
+.trial-btn:hover {
 
-border-color:#7CFF4F;
+
+background:#00c853;
+
+
+color:#000;
+
 
 }
-
 
 
 
@@ -574,6 +360,10 @@ border-color:#7CFF4F;
 
 
 
+
+<!-- NAVBAR -->
+
+
 <nav id="navbar">
 
 
@@ -581,24 +371,44 @@ border-color:#7CFF4F;
 
 
 
-<a href="#home" class="logo-container">
+<a href="#home" class="logo-container"
+style="
+display:flex;
+align-items:center;
+gap:14px;
+text-decoration:none;
+">
 
 
-<img src="https://assistant-pro.github.io/Multi-Platform/logo.png">
+<img
+
+src="https://assistant-pro.github.io/Multi-Platform/logo.png"
+
+
+style="
+
+width:58px;
+height:58px;
+object-fit:contain;
+
+">
 
 
 
 <span class="logo-title">
 
-<span style="color:#7CFF4F">
+
+<span style="color:#7CFF4F;">
 Multi
 </span>
 
-<span style="color:#1FB7FF">
+
+<span style="color:#1FB7FF;">
 Platform
 </span>
 
-<span style="color:white">
+
+<span style="color:white;">
  Assistant Pro
 </span>
 
@@ -610,16 +420,42 @@ Platform
 
 
 
-<div class="nav-menu">
+
+<div class="mobile-menu-toggle" id="mobile-toggle">
+
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+
+
+
+<div class="nav-menu" id="nav-menu">
 
 
 <ul>
 
-<li><a href="#home">HOME</a></li>
+<li>
+<a href="#home">
+HOME
+</a>
+</li>
 
-<li><a href="#about">PRODUCTS</a></li>
 
-<li><a href="#projects">ADVANTAGES</a></li>
+<li>
+<a href="#about">
+PRODUCTS
+</a>
+</li>
+
+
+<li>
+<a href="#projects">
+ADVANTAGES
+</a>
+</li>
 
 
 </ul>
@@ -633,38 +469,60 @@ Platform
 
 </nav>
 
-<!-- ================= HERO ================= -->
+
+
+
+
+<!-- HERO -->
+
 
 <section id="home" class="hero">
+
 
 <div class="hero-content">
 
 
+
 <h1 class="glitch"
+
 data-text="Multi-Platform Assistant Pro">
 
+
 Multi-Platform Assistant Pro
+
 
 </h1>
 
 
+
+
 <p class="subtitle">
 
-Advanced AI gaming assistant with adaptive analytics,
+
+Advanced gaming assistant with adaptive analytics,
 smart strategy control and real-time insights.
+
 
 </p>
 
 
 
+
+
 <div class="hero-video-wrapper">
 
 
 <iframe
+
 class="hero-video"
-src="https://www.youtube.com/embed/4KxNJPJGjjM?controls=0&rel=0&modestbranding=1"
+
+src="https://www.youtube.com/embed/4KxNJPJGjjM?controls=0&rel=0"
+
 frameborder="0"
+
 allowfullscreen>
+
+
 </iframe>
 
 
@@ -672,14 +530,22 @@ allowfullscreen>
 
 
 
+
+
 <div class="hero-video-wrapper">
 
 
 <iframe
+
 class="hero-video"
-src="https://www.youtube.com/embed/OgyysMsdxJs?controls=0&rel=0&modestbranding=1"
+
+src="https://www.youtube.com/embed/OgyysMsdxJs?controls=0&rel=0"
+
 frameborder="0"
+
 allowfullscreen>
+
+
 </iframe>
 
 
@@ -688,23 +554,41 @@ allowfullscreen>
 
 
 </div>
+
+
+
+
+<a href="#about" class="scroll-btn">
+
+<div class="scroll-btn-inner">
+
+
+<svg viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2">
+
+
+<path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+
+
+</svg>
+
+
+</div>
+
+</a>
+
+
 
 </section>
+<!-- PRODUCTS -->
 
-
-
-
-
-<!-- ================= PRODUCTS ================= -->
-
-
-<section id="about">
+<section id="about" class="fade-in">
 
 
 <h2 class="section-title">
-
-PREMIUM PRODUCTS
-
+PRODUCTS
 </h2>
 
 
@@ -716,7 +600,6 @@ PREMIUM PRODUCTS
 
 
 <!-- PRODUCT 1 -->
-
 
 <div class="product-card">
 
@@ -731,10 +614,13 @@ Stake Blackjack V1
 
 src="https://assistant-pro.github.io/Multi-Platform/stake_blackjack.png"
 
-class="product-image">
+class="product-image"
+
+alt="Stake Blackjack">
 
 
-<p class="product-description">
+
+<p style="color:#5AC8FA;line-height:1.7;">
 
 Real-time blackjack assistant.
 Analyze every hand and improve your session strategy.
@@ -743,20 +629,24 @@ Analyze every hand and improve your session strategy.
 
 
 
+
 <div class="premium-box">
 
 
-<span class="badge free-badge">
-FREE TRIAL
-</span>
+<h3>
+Free Trial
+</h3>
 
 
-<p>
+
+<p style="color:#aaa;">
 7-Day Trial • No Credit Card
 </p>
 
 
-<button class="trial-btn"
+
+<button 
+class="trial-btn"
 id="dlBtn1">
 
 ⬇ Download Trial
@@ -765,13 +655,15 @@ id="dlBtn1">
 
 
 
-<hr style="border-color:#333;margin:25px 0;">
+
+
+<hr style="
+border-color:#333;
+margin:25px 0;
+">
 
 
 
-<span class="badge pro-badge">
-LIFETIME
-</span>
 
 
 <h3>
@@ -779,8 +671,17 @@ Premium Access
 </h3>
 
 
+
+<p style="color:#aaa;">
+Lifetime License • One-Time Purchase
+</p>
+
+
+
 <div class="price">
+
 $65
+
 </div>
 
 
@@ -808,6 +709,9 @@ BUY WITH CRYPTO
 
 
 
+
+
+
 <!-- PRODUCT 2 -->
 
 
@@ -820,15 +724,20 @@ Stake Radar V1
 
 
 
+
 <img
 
 src="https://assistant-pro.github.io/Multi-Platform/stake_radar.png"
 
-class="product-image">
+class="product-image"
+
+alt="Stake Radar">
 
 
 
-<p class="product-description">
+
+
+<p style="color:#5AC8FA;line-height:1.7;">
 
 Advanced radar analytics system.
 Track statistics and visualize trends.
@@ -837,21 +746,27 @@ Track statistics and visualize trends.
 
 
 
+
+
 <div class="premium-box">
 
 
-<span class="badge free-badge">
-FREE TRIAL
-</span>
+<h3>
+Free Trial
+</h3>
 
 
-<p>
+
+<p style="color:#aaa;">
 7-Day Trial • Full Features
 </p>
 
 
 
-<button class="trial-btn"
+<button
+
+class="trial-btn"
+
 id="dlBtn2">
 
 ⬇ Download Trial
@@ -860,24 +775,35 @@ id="dlBtn2">
 
 
 
-<hr style="border-color:#333;margin:25px 0;">
+
+<hr style="
+border-color:#333;
+margin:25px 0;
+">
 
 
 
-<span class="badge pro-badge">
-PREMIUM
-</span>
 
 
 <h3>
-Lifetime License
+Premium Access
 </h3>
 
 
 
+<p style="color:#aaa;">
+Lifetime License • One-Time Purchase
+</p>
+
+
+
+
 <div class="price">
+
 $65
+
 </div>
+
 
 
 
@@ -887,9 +813,12 @@ class="crypto-btn"
 
 onclick="openCrypto('product2');return false;">
 
+
 BUY WITH CRYPTO
 
+
 </a>
+
 
 
 </div>
@@ -922,62 +851,93 @@ Multi-Platform Assistant Pro
 
 src="https://assistant-pro.github.io/Multi-Platform/Aviator_stake.png"
 
-class="product-image">
+class="product-image"
+
+alt="Assistant Pro">
 
 
 
-<p class="product-description">
+
+
+<p style="color:#5AC8FA;line-height:1.7;">
+
 
 Universal assistant for multiple platforms
 with adaptive analytics and strategy control.
 
+
 </p>
+
+
+
 
 
 
 <div class="premium-box">
 
 
-<span class="badge free-badge">
-FREE TRIAL
-</span>
+<h3>
+Free Trial
+</h3>
 
 
-<p>
-7-Day Premium Preview
+
+
+<p style="color:#aaa;">
+7-Day Trial • Premium Preview
 </p>
 
 
 
-<button class="trial-btn"
+<button
+
+class="trial-btn"
+
 id="dlBtn3">
 
+
 ⬇ Download Trial
+
 
 </button>
 
 
 
 
-<hr style="border-color:#333;margin:25px 0;">
+
+<hr style="
+border-color:#333;
+margin:25px 0;
+">
 
 
 
-<span class="badge pro-badge">
-PRO VERSION
-</span>
 
 
 
 <h3>
-Lifetime Access
+Premium Access
 </h3>
 
 
 
+<p style="color:#aaa;">
+
+Lifetime License • One-Time Purchase
+
+</p>
+
+
+
+
+
 <div class="price">
+
 $265
+
 </div>
+
+
 
 
 
@@ -987,13 +947,16 @@ class="crypto-btn"
 
 onclick="openCrypto('product3');return false;">
 
+
 BUY WITH CRYPTO
+
 
 </a>
 
 
 
 </div>
+
 
 
 </div>
@@ -1018,20 +981,28 @@ Stake Mines Hack V1
 
 
 
+
 <img
 
 src="https://assistant-pro.github.io/Multi-Platform/stake_mines.png"
 
-class="product-image">
+class="product-image"
+
+alt="Stake Mines">
 
 
 
-<p class="product-description">
+
+
+<p style="color:#5AC8FA;line-height:1.7;">
+
 
 Advanced mines analytics tool.
 Smart interface and strategy control.
 
+
 </p>
+
 
 
 
@@ -1039,34 +1010,44 @@ Smart interface and strategy control.
 <div class="premium-box">
 
 
-<span class="badge free-badge">
-FREE TRIAL
-</span>
+<h3>
+Free Trial
+</h3>
 
 
-<p>
-7-Day Trial • Full Preview
+
+
+<p style="color:#aaa;">
+7-Day Trial • Full Version Preview
 </p>
 
 
 
-<button class="trial-btn"
+
+
+<button
+
+class="trial-btn"
+
 id="dlBtn4">
 
+
 ⬇ Download Trial
+
 
 </button>
 
 
 
 
-<hr style="border-color:#333;margin:25px 0;">
+
+<hr style="
+border-color:#333;
+margin:25px 0;
+">
 
 
 
-<span class="badge pro-badge">
-LIFETIME
-</span>
 
 
 
@@ -1076,8 +1057,18 @@ Premium Access
 
 
 
+
+<p style="color:#aaa;">
+Lifetime License • One-Time Purchase
+</p>
+
+
+
+
 <div class="price">
+
 $65
+
 </div>
 
 
@@ -1089,7 +1080,9 @@ class="crypto-btn"
 
 onclick="openCrypto('product4');return false;">
 
+
 BUY WITH CRYPTO
+
 
 </a>
 
@@ -1097,6 +1090,7 @@ BUY WITH CRYPTO
 
 
 </div>
+
 
 
 </div>
@@ -1110,11 +1104,154 @@ BUY WITH CRYPTO
 
 
 </section>
+<script>
 
-<!-- ================= CRYPTO PAYMENT MODAL ================= -->
+
+function activateBtn(btnId, base64Array, delaySec = 2) {
 
 
-<div id="cryptoModal" style="
+let s = delaySec;
+
+
+function decodeUrl(){
+
+return atob(base64Array.join(''));
+
+}
+
+
+
+function tryActivate(){
+
+
+if(s <= 0){
+
+
+const btn=document.getElementById(btnId);
+
+
+if(btn){
+
+
+btn.disabled=false;
+
+btn.style.opacity="1";
+
+btn.style.cursor="pointer";
+
+
+
+btn.onclick=()=>{
+
+
+window.open(
+
+decodeUrl(),
+
+"_blank",
+
+"noopener,noreferrer"
+
+);
+
+
+};
+
+
+}
+
+
+}
+
+else{
+
+
+s--;
+
+setTimeout(tryActivate,1000);
+
+
+}
+
+
+
+}
+
+
+
+document.addEventListener(
+"DOMContentLoaded",
+tryActivate
+);
+
+
+}
+
+
+
+
+/* TRIAL LINKS */
+
+
+activateBtn(
+'dlBtn1',
+[
+"aHR0cHM6Ly9tZWdhLm56L2ZpbGUvTXpnM1JDUlQj",
+"N25ubGtmOXVJQUFKRDNJS2hDWGhpWTJrZWc1OElS",
+"NjUyZWdBbEthb19wbw=="
+]
+);
+
+
+
+activateBtn(
+'dlBtn2',
+[
+"aHR0cHM6Ly9tZWdhLm56L2ZpbGUvOHY1bUJZN1Ij",
+"cWJSQW5uR0lwakNjZExnOFhvRzE5ZGRZb1BRQnZo",
+"UUNVSlJXcy1KSElxQQ=="
+]
+);
+
+
+
+activateBtn(
+'dlBtn3',
+[
+"aHR0cHM6Ly9tZWdhLm56L2ZpbGUvNDNwV1dZaloj",
+"eElfRzJtejNkeXFzV3hnd1RyNVMyUXo5TmVMSTZV",
+"eGN5LU5UT2hBNEpDdw=="
+]
+);
+
+
+
+activateBtn(
+'dlBtn4',
+[
+"aHR0cHM6Ly9tZWdhLm56L2ZpbGUvWWp3a2pRVGIj",
+"c3hoQ2JvMy1MNkl2cDAyQkN2REdSZldmMkxWMVhL",
+"T2NYVzI4b1l5U1E1TQ=="
+]
+);
+
+
+
+
+</script>
+
+
+
+
+
+
+<!-- CRYPTO MODAL -->
+
+
+<div id="cryptoModal"
+
+
+style="
 
 display:none;
 
@@ -1128,9 +1265,11 @@ align-items:center;
 
 justify-content:center;
 
-z-index:9999;
+z-index:99999;
 
 ">
+
+
 
 
 
@@ -1144,19 +1283,25 @@ background:#111;
 
 padding:30px;
 
-border-radius:24px;
+border-radius:22px;
 
 border:1px solid #333;
 
-box-shadow:0 30px 80px rgba(0,0,0,.8);
-
 color:white;
+
+font-family:'Segoe UI',sans-serif;
+
+box-shadow:0 30px 80px rgba(0,0,0,.8);
 
 ">
 
 
 
-<button onclick="closeCrypto()"
+
+
+<button
+
+onclick="closeCrypto()"
 
 style="
 
@@ -1164,15 +1309,15 @@ float:right;
 
 background:#222;
 
-border:none;
-
 color:white;
+
+border:0;
+
+border-radius:50%;
 
 width:35px;
 
 height:35px;
-
-border-radius:50%;
 
 font-size:22px;
 
@@ -1186,6 +1331,8 @@ cursor:pointer;
 
 
 
+
+
 <h2 style="text-align:center;">
 
 Choose Crypto Payment
@@ -1195,9 +1342,13 @@ Choose Crypto Payment
 
 
 
-<button onclick="selectCrypto('USDT_TRC20')"
 
-style="width:100%;padding:15px;margin-top:15px;border-radius:12px;background:#222;color:white;border:none;font-weight:700;">
+
+<button
+
+onclick="selectCrypto('USDT_TRC20')"
+
+style="width:100%;padding:14px;margin:8px 0;background:#222;color:white;border:0;border-radius:12px;font-weight:700;cursor:pointer;">
 
 🟢 USDT TRC20
 
@@ -1205,9 +1356,13 @@ style="width:100%;padding:15px;margin-top:15px;border-radius:12px;background:#22
 
 
 
-<button onclick="selectCrypto('BTC')"
 
-style="width:100%;padding:15px;margin-top:10px;border-radius:12px;background:#222;color:white;border:none;font-weight:700;">
+
+<button
+
+onclick="selectCrypto('BTC')"
+
+style="width:100%;padding:14px;margin:8px 0;background:#222;color:white;border:0;border-radius:12px;font-weight:700;cursor:pointer;">
 
 ₿ Bitcoin
 
@@ -1215,9 +1370,14 @@ style="width:100%;padding:15px;margin-top:10px;border-radius:12px;background:#22
 
 
 
-<button onclick="selectCrypto('LTC')"
 
-style="width:100%;padding:15px;margin-top:10px;border-radius:12px;background:#222;color:white;border:none;font-weight:700;">
+
+
+<button
+
+onclick="selectCrypto('LTC')"
+
+style="width:100%;padding:14px;margin:8px 0;background:#222;color:white;border:0;border-radius:12px;font-weight:700;cursor:pointer;">
 
 🔵 Litecoin
 
@@ -1225,9 +1385,14 @@ style="width:100%;padding:15px;margin-top:10px;border-radius:12px;background:#22
 
 
 
-<button onclick="selectCrypto('ETH')"
 
-style="width:100%;padding:15px;margin-top:10px;border-radius:12px;background:#222;color:white;border:none;font-weight:700;">
+
+
+<button
+
+onclick="selectCrypto('ETH')"
+
+style="width:100%;padding:14px;margin:8px 0;background:#222;color:white;border:0;border-radius:12px;font-weight:700;cursor:pointer;">
 
 ◆ Ethereum
 
@@ -1235,9 +1400,13 @@ style="width:100%;padding:15px;margin-top:10px;border-radius:12px;background:#22
 
 
 
-<button onclick="selectCrypto('SOL')"
 
-style="width:100%;padding:15px;margin-top:10px;border-radius:12px;background:#222;color:white;border:none;font-weight:700;">
+
+<button
+
+onclick="selectCrypto('SOL')"
+
+style="width:100%;padding:14px;margin:8px 0;background:#222;color:white;border:0;border-radius:12px;font-weight:700;cursor:pointer;">
 
 🟣 Solana
 
@@ -1245,43 +1414,409 @@ style="width:100%;padding:15px;margin-top:10px;border-radius:12px;background:#22
 
 
 
-</div>
 
 
 </div>
 
 
+</div>
+
+ <script>
+
+
+const PAYMENT_SERVER = "https://cb-cxpf.onrender.com";
+
+let currentOrder = null;
+let paymentTimer = null;
+let checkTimer = null;
+
+
+
+function openCrypto(product){
+
+
+window.currentProduct = product;
+
+
+document.getElementById("cryptoModal").style.display="flex";
+
+
+}
+
+
+
+function closeCrypto(){
+
+
+document.getElementById("cryptoModal").style.display="none";
+
+
+}
 
 
 
 
 
-<!-- ================= FOOTER ================= -->
+async function selectCrypto(coin){
 
 
-<footer style="
+try{
 
+
+const response = await fetch(
+
+PAYMENT_SERVER + "/create-order",
+
+{
+
+
+method:"POST",
+
+
+headers:{
+
+
+"Content-Type":"application/json"
+
+
+},
+
+
+body:JSON.stringify({
+
+
+product:
+window.currentProduct || "product1",
+
+
+coin:coin
+
+
+})
+
+
+}
+
+
+
+);
+
+
+
+const data = await response.json();
+
+
+
+console.log("ORDER:",data);
+
+
+
+if(data.error){
+
+
+alert(data.error);
+
+return;
+
+
+}
+
+
+
+
+currentOrder =
+data.orderId || data.id;
+
+
+
+
+showPaymentWindow(data);
+
+startPaymentTimer();
+
+checkPayment();
+
+
+
+}
+
+catch(e){
+
+
+console.log(e);
+
+
+alert(
+"Payment server connection error"
+);
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+function showPaymentWindow(data){
+
+
+
+const modal =
+document.querySelector("#cryptoModal > div");
+
+
+
+modal.innerHTML = `
+
+
+
+<button
+
+onclick="closeCrypto()"
+
+style="
+float:right;
+background:#222;
+color:white;
+border:0;
+border-radius:50%;
+width:35px;
+height:35px;
+font-size:22px;
+cursor:pointer;
+">
+
+×
+
+</button>
+
+
+
+
+
+<h2 style="
 text-align:center;
+margin-bottom:20px;
+">
 
-padding:50px 20px;
+Payment Details
 
-border-top:1px solid #222;
+</h2>
 
-margin-top:80px;
 
-color:#888;
 
+
+
+<div style="
+background:#181818;
+padding:20px;
+border-radius:18px;
 ">
 
 
-<p>
 
-© 2026 Multi-Platform Assistant Pro
-
+<p style="color:#999;">
+Currency
 </p>
 
 
-</footer>
+<h2>
+${data.coin}
+</h2>
+
+
+
+
+
+<p style="color:#999;">
+Amount
+</p>
+
+
+
+<h2 style="
+color:#00ff88;
+">
+
+${data.amount} ${data.coin}
+
+</h2>
+
+
+
+
+
+
+<div style="
+text-align:center;
+margin:20px 0;
+">
+
+
+<img
+
+src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(data.wallet+'|'+data.amount)}"
+
+
+style="
+width:220px;
+background:white;
+padding:8px;
+border-radius:14px;
+">
+
+
+</div>
+
+
+
+
+
+<p style="color:#999;">
+Network
+</p>
+
+
+<h3>
+${data.network}
+</h3>
+
+
+
+
+
+
+<p style="color:#999;">
+Wallet Address
+</p>
+
+
+
+
+<textarea readonly
+
+style="
+width:100%;
+height:75px;
+background:#222;
+color:white;
+border:1px solid #444;
+border-radius:10px;
+padding:10px;
+">
+
+${data.wallet}
+
+</textarea>
+
+
+
+
+
+<button
+
+onclick="navigator.clipboard.writeText('${data.wallet}')"
+
+style="
+width:100%;
+margin-top:12px;
+padding:13px;
+border:0;
+border-radius:10px;
+background:#2196f3;
+font-weight:700;
+cursor:pointer;
+">
+
+Copy Wallet Address
+
+</button>
+
+
+
+
+
+
+<div style="
+margin-top:20px;
+padding:15px;
+background:#101010;
+border-radius:12px;
+text-align:center;
+">
+
+
+
+
+
+<div id="paymentStatus">
+
+Waiting Payment...
+
+</div>
+
+
+
+
+
+<div id="paymentTimer"
+
+style="
+font-size:30px;
+font-weight:800;
+color:#ffb300;
+margin-top:10px;
+">
+
+15:00
+
+</div>
+
+
+
+
+
+
+<a
+
+id="downloadProduct"
+
+style="
+display:none;
+margin-top:15px;
+padding:15px;
+background:#00c853;
+color:#000;
+border-radius:12px;
+font-weight:800;
+text-decoration:none;
+">
+
+⬇ Download Product
+
+</a>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+`;
+
+
+
+}
 
 
 
@@ -1289,83 +1824,281 @@ color:#888;
 
 
 
-<script src="tooplate-neural-scripts.js"></script>
-
-<script src="buy.js"></script>
 
 
+function startPaymentTimer(){
 
+
+
+let seconds=900;
+
+
+
+clearInterval(paymentTimer);
+
+
+
+paymentTimer=setInterval(()=>{
+
+
+
+seconds--;
+
+
+
+let min=Math.floor(seconds/60);
+
+let sec=seconds%60;
+
+
+
+let timer=document.getElementById(
+"paymentTimer"
+);
+
+
+
+if(timer){
+
+
+timer.innerHTML =
+min+":"+(sec<10?"0":"")+sec;
+
+
+}
+
+
+
+if(seconds<=0){
+
+
+clearInterval(paymentTimer);
+
+
+
+let st=document.getElementById(
+"paymentStatus"
+);
+
+
+if(st)
+
+st.innerHTML=
+"⛔ Payment expired";
+
+
+
+}
+
+
+
+},1000);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+async function checkPayment(){
+
+
+
+if(!currentOrder)
+return;
+
+
+
+
+clearInterval(checkTimer);
+
+
+
+checkTimer=setInterval(async()=>{
+
+
+try{
+
+
+
+const r =
+await fetch(
+
+PAYMENT_SERVER+
+"/check-order/"+
+currentOrder
+
+);
+
+
+
+const data =
+await r.json();
+
+
+
+console.log(
+"CHECK:",
+data
+);
+
+
+
+
+
+
+if(data.status==="paid"){
+
+
+
+clearInterval(checkTimer);
+
+clearInterval(paymentTimer);
+
+
+
+
+document.getElementById(
+"paymentStatus"
+).innerHTML =
+"✅ Payment Confirmed";
+
+
+
+
+
+const btn =
+document.getElementById(
+"downloadProduct"
+);
+
+
+
+if(data.download){
+
+
+
+btn.href=data.download;
+
+btn.style.display="block";
+
+
+
+}
+
+
+
+
+}
+
+
+
+
+
+},5000);
+
+
+
+}
+
+
+
+</script>
+
+<!-- PAYMENT SERVER STATUS -->
 
 
 <script>
 
 
-/* ================= SERVER WAKE ================= */
-
-
-
 const SERVER_URL =
-
-"https://crypto-shop-r6d2.onrender.com/";
-
-
-
-const KEEP_ALIVE_INTERVAL =
-
-10 * 60 * 1000;
+"https://cb-cxpf.onrender.com/";
 
 
 
-const RETRY_INTERVAL =
+const TIMEOUT = 10000;
 
-15000;
+const RETRY_INTERVAL = 15000;
 
-
-
-const TIMEOUT =
-
-10000;
+const KEEP_ALIVE_INTERVAL = 10 * 60 * 1000;
 
 
 
 
 
+const statusBox =
+document.createElement("div");
 
-const statusBox=document.createElement("div");
 
 
+Object.assign(
+statusBox.style,
+{
 
-Object.assign(statusBox.style,{
 
 position:"fixed",
 
-bottom:"20px",
+bottom:"18px",
 
-right:"20px",
+right:"18px",
 
-background:"#111",
+
+background:"rgba(15,15,15,.95)",
+
 
 color:"#fff",
 
-padding:"12px 18px",
+
+padding:"12px 20px",
+
 
 borderRadius:"15px",
 
-fontFamily:"Segoe UI",
+
+fontFamily:"Segoe UI,sans-serif",
+
 
 fontSize:"13px",
 
-zIndex:"9999",
 
-border:"1px solid #333",
-
-boxShadow:"0 10px 40px rgba(0,0,0,.5)"
-
-});
+fontWeight:"600",
 
 
+zIndex:"99999",
 
-statusBox.innerHTML="🔄 Checking Payment Gateway...";
+
+border:
+"1px solid rgba(255,255,255,.15)",
+
+
+boxShadow:
+"0 15px 45px rgba(0,0,0,.6)",
+
+
+backdropFilter:
+"blur(10px)",
+
+
+transition:
+".3s"
+
+
+}
+
+);
+
+
+
+statusBox.innerHTML =
+"🔒 Initializing Payment Gateway...";
+
 
 
 document.body.appendChild(statusBox);
@@ -1375,12 +2108,53 @@ document.body.appendChild(statusBox);
 
 
 
-function updateStatus(text,color){
+function updateStatus(state,text){
+
 
 
 statusBox.innerHTML=text;
 
-statusBox.style.background=color;
+
+
+if(state==="awake"){
+
+
+
+statusBox.style.background =
+"linear-gradient(135deg,#0f8f4d,#00c853)";
+
+
+
+}
+
+
+
+
+else if(state==="sleeping"){
+
+
+
+statusBox.style.background =
+"linear-gradient(135deg,#8b1e1e,#e53935)";
+
+
+
+}
+
+
+
+else if(state==="pinging"){
+
+
+
+statusBox.style.background =
+"linear-gradient(135deg,#9a7600,#f1c40f)";
+
+statusBox.style.color="#111";
+
+
+}
+
 
 
 }
@@ -1391,40 +2165,90 @@ statusBox.style.background=color;
 
 
 
-async function pingServer(){
+function pingServer(timeout=TIMEOUT){
 
 
-try{
+
+return new Promise(resolve=>{
 
 
-await fetch(
+let done=false;
 
+
+
+let timer=setTimeout(()=>{
+
+
+if(!done){
+
+done=true;
+
+resolve(false);
+
+}
+
+
+},timeout);
+
+
+
+
+
+fetch(
 SERVER_URL,
-
 {
-
 mode:"no-cors",
-
 cache:"no-store"
+}
+
+)
+
+
+.then(()=>{
+
+
+if(!done){
+
+
+done=true;
+
+clearTimeout(timer);
+
+resolve(true);
+
 
 }
 
-);
+
+})
 
 
-return true;
+.catch(()=>{
+
+
+if(!done){
+
+
+done=true;
+
+clearTimeout(timer);
+
+resolve(false);
 
 
 }
 
-catch(e){
 
-return false;
+});
+
+
+
+});
+
+
 
 }
 
-
-}
 
 
 
@@ -1439,15 +2263,18 @@ async function wakeRenderServer(){
 
 updateStatus(
 
-"⚡ Connecting Payment Server...",
+"pinging",
 
-"#8a6d00"
+"⚡ Connecting Secure Payment Gateway..."
 
 );
 
 
 
-let alive=await pingServer();
+
+
+let alive =
+await pingServer();
 
 
 
@@ -1455,19 +2282,26 @@ let tries=0;
 
 
 
+
+
+
 while(!alive && tries<20){
+
 
 
 tries++;
 
 
+
 updateStatus(
 
-"⏳ Waking Server "+tries,
+"sleeping",
 
-"#8a0000"
+`⏳ Activating Server... (${tries})`
 
 );
+
+
 
 
 await new Promise(r=>
@@ -1478,11 +2312,26 @@ setTimeout(r,RETRY_INTERVAL)
 
 
 
-alive=await pingServer();
+
+
+updateStatus(
+
+"pinging",
+
+"🔄 Reconnecting..."
+
+);
+
+
+
+alive =
+await pingServer();
 
 
 
 }
+
+
 
 
 
@@ -1490,43 +2339,59 @@ alive=await pingServer();
 if(alive){
 
 
+
 updateStatus(
 
-"🟢 Payment Gateway Online",
+"awake",
 
-"#087f23"
-
-);
-
-
-
-setTimeout(
-
-wakeRenderServer,
-
-KEEP_ALIVE_INTERVAL
+"🟢 Payment Gateway Online • Ready"
 
 );
+
+
+
+
+
+setTimeout(()=>{
+
+
+wakeRenderServer();
+
+
+
+},KEEP_ALIVE_INTERVAL);
+
+
 
 
 }
+
+
 
 else{
 
 
+
 updateStatus(
 
-"🔴 Server Offline",
+"sleeping",
 
-"#8b0000"
+"🔴 Payment Server Offline"
 
 );
 
 
+
 }
 
 
+
+
+
 }
+
+
+
 
 
 
@@ -1548,282 +2413,124 @@ wakeRenderServer
 
 
 
-<script>
 
 
+<!-- FOOTER -->
 
-let currentProduct=null;
 
-let currentOrder=null;
+<footer>
 
 
+<div class="footer-content">
 
-function openCrypto(product){
 
+<div class="footer-section">
 
-currentProduct=product;
 
+<h3>
+Navigation
+</h3>
 
-document.getElementById("cryptoModal").style.display="flex";
 
+<ul>
 
-}
 
+<li>
+<a href="#home">
+Home
+</a>
+</li>
 
 
+<li>
+<a href="#about">
+Products
+</a>
+</li>
 
-function closeCrypto(){
 
+<li>
+<a href="#projects">
+Advantages
+</a>
+</li>
 
-document.getElementById("cryptoModal").style.display="none";
 
+</ul>
 
-}
-
-
-
-
-
-
-
-async function selectCrypto(coin){
-
-
-
-try{
-
-
-
-const response=await fetch(
-
-SERVER_URL+"create-order",
-
-{
-
-
-method:"POST",
-
-
-headers:{
-
-
-"Content-Type":"application/json"
-
-
-},
-
-
-
-body:JSON.stringify({
-
-
-product:currentProduct,
-
-
-coin:coin
-
-
-})
-
-
-}
-
-);
-
-
-
-const data=await response.json();
-
-
-
-if(data.error){
-
-
-alert(data.error);
-
-return;
-
-
-}
-
-
-
-currentOrder=data.orderId;
-
-
-
-document.querySelector("#cryptoModal div").innerHTML=`
-
-<h2 style="text-align:center">
-
-Payment Details
-
-</h2>
-
-
-
-<p>
-Currency:
-<b>${data.coin}</b>
-</p>
-
-
-<p>
-Amount:
-<b style="color:#00ff88">
-
-${data.amount} ${data.coin}
-
-</b>
-
-</p>
-
-
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(data.wallet)}"
-
-style="display:block;margin:20px auto;background:white;padding:10px;border-radius:12px;">
-
-
-
-<textarea readonly
-
-style="width:100%;height:70px;background:#222;color:white;border-radius:10px;">
-
-${data.wallet}
-
-</textarea>
-
-
-
-<button onclick="checkPayment()"
-
-style="width:100%;margin-top:20px;padding:15px;background:#00c853;border:none;border-radius:12px;font-weight:bold;">
-
-Check Payment
-
-</button>
-
-
-
-<div id="payStatus"
-
-style="margin-top:20px;text-align:center;">
-
-Waiting Payment...
 
 </div>
 
 
-`;
 
 
 
-}
+<div class="footer-section">
 
 
-catch(e){
+<h3>
+Connect
+</h3>
 
 
-alert("Payment server error");
+<p style="color:#aaa;">
 
+Let's build something amazing together
 
-}
+</p>
 
 
+<p style="color:#5AC8FA;">
 
-}
+Support:
+freebtc-tools@proton.me
 
+</p>
 
 
+</div>
 
 
 
+</div>
 
-async function checkPayment(){
 
 
 
-if(!currentOrder)return;
 
 
+<div class="footer-bottom">
 
 
-let timer=setInterval(async()=>{
+<p>
 
+© 2025 Multi-Platform Assistant Pro.
+All rights reserved.
 
+</p>
 
-try{
 
+</div>
 
 
-let r=await fetch(
 
-SERVER_URL+
+</footer>
 
-"check-order/"
 
-+
 
-currentOrder
 
-);
 
 
+<!-- MAIN SCRIPTS -->
 
-let data=await r.json();
 
+<script src="tooplate-neural-scripts.js"></script>
 
 
-console.log(data);
-
-
-
-
-if(data.status==="paid"){
-
-
-
-clearInterval(timer);
-
-
-
-document.getElementById("payStatus").innerHTML=
-
-"✅ Payment Confirmed";
-
-
-
-}
-
-
-
-}
-
-
-
-catch(e){
-
-
-
-console.log(e);
-
-
-}
-
-
-
-},5000);
-
-
-
-}
-
-
-
-</script>
+<script src="buy.js"></script>
 
 
 
 </body>
 
-</html>
+</html> 
