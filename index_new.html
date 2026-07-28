@@ -3294,8 +3294,7 @@ async function checkPayment(){
 </script>
 
 <script>
-
-async function loadDownloadCount(id){
+async function loadDownloadCount(id) {
 
     const res = await fetch(
         "https://download-counter.mradakovairina.workers.dev/count?file=" + id
@@ -3305,13 +3304,12 @@ async function loadDownloadCount(id){
 
     const box = document.getElementById("count-" + id);
 
-    if(box){
+    if (box) {
         box.innerHTML = "Downloads: " + data.downloads;
     }
 }
 
 loadDownloadCount("dlBtn6");
-
 </script>
 </body>
 </html>
