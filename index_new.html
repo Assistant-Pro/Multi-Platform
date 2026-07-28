@@ -293,8 +293,17 @@ margin-top:30px;
     font-size:13px;
     font-family:'Segoe UI',sans-serif;
 ">
-    Downloads: 0
+    Loading...
 </div>
+
+<script>
+fetch("https://download-counter.mradakovairina.workers.dev/count?file=dlBtn6")
+.then(r => r.json())
+.then(data => {
+    document.getElementById("count-dlBtn6").innerHTML =
+        "Downloads: " + data.downloads;
+});
+</script>
 
 </div>
 
