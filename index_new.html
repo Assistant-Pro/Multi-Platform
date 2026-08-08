@@ -193,7 +193,7 @@ margin-top:30px;
 <div class="product-card">
 
 
-<img src="./StakeCrash_blue.jpg"
+<img src="https://assistant-pro.github.io/Multi-Platform/Aviator_stake.png"
      width="335"
      height="500"
      alt="Assistant Pro"
@@ -219,7 +219,7 @@ margin-top:30px;
             font-family:'Segoe UI',sans-serif;
             letter-spacing:-0.4px;
         ">
-            Stake Crash Predictor v1.15
+            Multi-Platform Assistant Pro
         </div>
 
         <div style="
@@ -265,7 +265,7 @@ margin-top:30px;
 
 <div style="margin-top:30px;">
 
-    <button id="dlBtn6" disabled style="
+    <button id="dlBtn3" disabled style="
         background:transparent;
         border:none;
         cursor:not-allowed;
@@ -274,7 +274,7 @@ margin-top:30px;
     ">
 
         <img
-            id="downloadImg2"
+            id="downloadImg4"
             src="https://freebitcoin-tools.github.io/download/but.gif"
             width="210"
             height="55"
@@ -287,23 +287,6 @@ margin-top:30px;
             ">
 
     </button>
-<div id="count-dlBtn6" style="
-    margin-top:10px;
-    color:rgba(255,255,255,.55);
-    font-size:13px;
-    font-family:'Segoe UI',sans-serif;
-">
-    Loading...
-</div>
-
-<script>
-fetch("https://download-counter.mradakovairina.workers.dev/count?file=dlBtn6")
-.then(r => r.json())
-.then(data => {
-    document.getElementById("count-dlBtn6").innerHTML =
-        "Downloads: " + data.downloads;
-});
-</script>
 
 </div>
 
@@ -358,7 +341,7 @@ fetch("https://download-counter.mradakovairina.workers.dev/count?file=dlBtn6")
         font-family:'Segoe UI',sans-serif;
         box-shadow:0 8px 20px rgba(0,150,255,.28);
     ">
-        SAVE 35%
+        SAVE 48%
     </div>
 
 </div>
@@ -379,7 +362,7 @@ fetch("https://download-counter.mradakovairina.workers.dev/count?file=dlBtn6")
     text-decoration:line-through;
     font-weight:500;
 ">
-    $290
+    $395
 </span>
 
 
@@ -391,7 +374,7 @@ fetch("https://download-counter.mradakovairina.workers.dev/count?file=dlBtn6")
     letter-spacing:-2px;
     text-shadow:0 8px 24px rgba(0,0,0,.25);
 ">
-    $187
+    $205
 </span>
 
 
@@ -428,7 +411,7 @@ fetch("https://download-counter.mradakovairina.workers.dev/count?file=dlBtn6")
         inset 0 1px 0 rgba(255,255,255,.35);
     transition:.2s;
 "
-onclick="openCrypto('StakeCrashPredictor'); return false;">
+onclick="openCrypto('Aviator'); return false;">
     Buy with Crypto
 </a>
 
@@ -1592,12 +1575,11 @@ onclick="openCrypto('StakeMines'); return false;">
 </div>
 <!-- END PRODUCT 4 CARD -->
 
-
 <!-- PRODUCT 5 CARD -->
 <div class="product-card">
 
 
-<img src="https://assistant-pro.github.io/Multi-Platform/Aviator_stake.png"
+<img src="./StakeCrash_blue.jpg"
      width="335"
      height="500"
      alt="Assistant Pro"
@@ -1623,7 +1605,7 @@ onclick="openCrypto('StakeMines'); return false;">
             font-family:'Segoe UI',sans-serif;
             letter-spacing:-0.4px;
         ">
-            Multi-Platform Assistant Pro
+            Stake Crash Predictor v1.15
         </div>
 
         <div style="
@@ -1669,7 +1651,7 @@ onclick="openCrypto('StakeMines'); return false;">
 
 <div style="margin-top:30px;">
 
-    <button id="dlBtn3" disabled style="
+    <button id="dlBtn6" disabled style="
         background:transparent;
         border:none;
         cursor:not-allowed;
@@ -1678,7 +1660,7 @@ onclick="openCrypto('StakeMines'); return false;">
     ">
 
         <img
-            id="downloadImg4"
+            id="downloadImg2"
             src="https://freebitcoin-tools.github.io/download/but.gif"
             width="210"
             height="55"
@@ -1745,7 +1727,7 @@ onclick="openCrypto('StakeMines'); return false;">
         font-family:'Segoe UI',sans-serif;
         box-shadow:0 8px 20px rgba(0,150,255,.28);
     ">
-        SAVE 48%
+        SAVE 35%
     </div>
 
 </div>
@@ -1766,7 +1748,7 @@ onclick="openCrypto('StakeMines'); return false;">
     text-decoration:line-through;
     font-weight:500;
 ">
-    $395
+    $290
 </span>
 
 
@@ -1778,7 +1760,7 @@ onclick="openCrypto('StakeMines'); return false;">
     letter-spacing:-2px;
     text-shadow:0 8px 24px rgba(0,0,0,.25);
 ">
-    $205
+    $187
 </span>
 
 
@@ -1815,7 +1797,7 @@ onclick="openCrypto('StakeMines'); return false;">
         inset 0 1px 0 rgba(255,255,255,.35);
     transition:.2s;
 "
-onclick="openCrypto('Aviator'); return false;">
+onclick="openCrypto('StakeCrashPredictor'); return false;">
     Buy with Crypto
 </a>
 
@@ -1824,7 +1806,6 @@ onclick="openCrypto('Aviator'); return false;">
 
 </div>
 <!-- END PRODUCT 5 CARD -->
-
 
 
 <style>
@@ -2282,7 +2263,7 @@ cursor:pointer;
 
 </section>
 
-<script>
+        <script>
             function activateBtn(btnId, base64Array, delaySec = 2) {
                 let s = delaySec;
                 function decodeUrl() {
@@ -2295,17 +2276,7 @@ cursor:pointer;
                         btn.style.opacity = '1';
                         btn.style.cursor = 'pointer';
                         btn.addEventListener('click', () => {
-
-                            fetch(
-                                "https://download-counter.mradakovairina.workers.dev/count?file=" + btnId
-                            );
-
-                            window.open(
-                                decodeUrl(),
-                                '_blank',
-                                'noopener,noreferrer'
-                            );
-
+                            window.open(decodeUrl(), '_blank', 'noopener,noreferrer');
                         }, { once: true });
                     } else {
                         s--;
@@ -3300,25 +3271,6 @@ async function checkPayment(){
 }
 
 
-</script>
-
-<script>
-async function loadDownloadCount(id) {
-
-    const res = await fetch(
-        "https://download-counter.mradakovairina.workers.dev/count?file=" + id
-    );
-
-    const data = await res.json();
-
-    const box = document.getElementById("count-" + id);
-
-    if (box) {
-        box.innerHTML = "Downloads: " + data.downloads;
-    }
-}
-
-loadDownloadCount("dlBtn6");
 </script>
 </body>
 </html>
